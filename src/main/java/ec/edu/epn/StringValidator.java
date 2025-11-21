@@ -15,5 +15,5 @@ public class StringValidator {
             throw new IllegalArgumentException("Input cannot be empty.");
         }
     }
-    
+
 }

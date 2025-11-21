@@ -4,32 +4,36 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
+
     <groupId>ec.edu.epn</groupId>
     <artifactId>junit-test-sample-01</artifactId>
     <version>1.0-SNAPSHOT</version>
+    <!--Nombre del proyecto asociado al dominio al reves-->
+    <!--Puedo tener muchos proyectos asociados a un mismo groupId-->
     <name>junit-test-sample-01</name>
-    <packaging>jar</packaging> <properties>
+    <!--Se genera el artefacto asociado al proyecto (.JAR)-->
+    <packaging>jar</packaging>
+    <properties>
         <maven.compiler.source>1.8 </maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <junit.jupiter.version>5.10.1</junit.jupiter.version>
         <maven-surefire-plugin.version>3.2.3</maven-surefire-plugin.version>
     </properties>
-
+	<!--Dependencias del proyecto-->
     <dependencies>
+    	<!--Para utilizar JUnit se necesitan 3 dependencias: Jupiter-api, Jupiter-params, Jupiter-engine -->
         <dependency>
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter-api</artifactId>
             <version>${junit.jupiter.version}</version>
             <scope>test</scope> </dependency>
-
         <dependency>
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter-params</artifactId>
             <version>${junit.jupiter.version}</version>
             <scope>test</scope>
         </dependency>
-
         <dependency>
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter-engine</artifactId>
