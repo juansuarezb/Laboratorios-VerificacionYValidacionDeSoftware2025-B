@@ -1,5 +1,6 @@
 package ec.edu.epn;
 
+
 /**
  * Clase para calcular impuestos sobre un monto.
  */
